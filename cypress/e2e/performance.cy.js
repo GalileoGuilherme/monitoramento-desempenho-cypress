@@ -1,5 +1,5 @@
 describe('Monitoramento de Desempenho', () => {
-  const sites = ['https://www.globo.com/', 'https://www.google.com.br/?hl=pt-BR'];
+  const sites = ['https://www.globo.com/', 'https://www.google.com.br/'];
 
   sites.forEach((url) => {
     it(`Deve testar desempenho do site ${url}`, () => {
