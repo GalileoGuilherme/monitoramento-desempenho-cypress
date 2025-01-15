@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-15T18:37:08.773Z",
+    "end": "2025-01-15T18:37:28.767Z",
+    "duration": 19994,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4c268138-52a6-4996-a536-ce61dd78c35c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\performance.cy.js",
+      "file": "cypress\\e2e\\performance.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "34e64b84-af79-4db9-8e6e-c23ccabe7805",
+          "title": "Monitoramento de Desempenho",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve testar desempenho do site https://www.globo.com/",
+              "fullTitle": "Monitoramento de Desempenho Deve testar desempenho do site https://www.globo.com/",
+              "timedOut": null,
+              "duration": 12657,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(url);\ncy.task('lighthouse', {\n  url,\n  thresholds: {\n    performance: 50,\n    accessibility: 50,\n    'best-practices': 50,\n    seo: 50\n  }\n}).then(report => {\n  cy.log(`Resultados de desempenho para ${url}`);\n  cy.log(report);\n});",
+              "err": {},
+              "uuid": "efe2fc57-f18f-4299-b9d2-546c55d04952",
+              "parentUUID": "34e64b84-af79-4db9-8e6e-c23ccabe7805",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve testar desempenho do site https://www.google.com.br/",
+              "fullTitle": "Monitoramento de Desempenho Deve testar desempenho do site https://www.google.com.br/",
+              "timedOut": null,
+              "duration": 2370,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(url);\ncy.task('lighthouse', {\n  url,\n  thresholds: {\n    performance: 50,\n    accessibility: 50,\n    'best-practices': 50,\n    seo: 50\n  }\n}).then(report => {\n  cy.log(`Resultados de desempenho para ${url}`);\n  cy.log(report);\n});",
+              "err": {},
+              "uuid": "e91c819d-8304-4b26-a573-9957d65c11e4",
+              "parentUUID": "34e64b84-af79-4db9-8e6e-c23ccabe7805",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "efe2fc57-f18f-4299-b9d2-546c55d04952",
+            "e91c819d-8304-4b26-a573-9957d65c11e4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15027,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
